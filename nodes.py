@@ -51,6 +51,7 @@ def teacache_flux_forward(
         control = None,
         transformer_options={},
         attn_mask: Tensor = None,
+        timestep_zero_index=None,
     ) -> Tensor:
         patches_replace = transformer_options.get("patches_replace", {})
         rel_l1_thresh = transformer_options.get("rel_l1_thresh")
